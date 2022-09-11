@@ -1,67 +1,54 @@
-import { Component } from "react";
-import "./styles.css";
-import { CopyToClipboard } from "react-copy-to-clipboard";
+pacific23
+Free
 
-import buttonBuy from "./images/ButtonBuy.png";
+Drafts/
+defilogic Race
+pacific23
+Share
+Fork
+Create Sandbox
 
-class Result extends Component {
-  state = {
-    copyText: "Partager votre score"
-  };
 
-  render() {
-    return (
-      <tr>
-        <td></td>
-        <td>
-          <table align="center">
-            <tbody>
-              <tr className="help" align="center">
-                <td>
-                  <h3>
-                    {"🐦🧟https://defilogic.bankiiiz.com🧟🐦"}
-                    <br />
-                    {this.props.trophy}
-                    <br />
-                    {"⏱" + this.props.timeFinal + "s⏱"}
-                    <br />
-                    {this.props.nbTry + " tentative(s) : " + this.props.essais}
-                    <br />
-                    {this.props.historicalMoves.length +
-                      " mouvements : " +
-                      this.props.lineMvt}
-                    <br />
-                    <CopyToClipboard
-                      text={this.props.textToCopy}
-                      onCopy={() =>
-                        this.setState({ copyText: "Texte copié !" })
-                      }
-                    >
-                      <button>{this.state.copyText}</button>
-                    </CopyToClipboard>
-                  </h3>
-                  <input
-                    alt="buy"
-                    type="image"
-                    src={buttonBuy}
-                    onClick={() =>
-                      window.open(
-                        "https://blackrockgames.fr/boutiques",
-                        "_blank"
-                      )
-                    }
-                    width="30%"
-                    height="30%"
-                  />
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </td>
-        <td></td>
-      </tr>
-    );
-  }
-}
 
-export default Result;
+
+
+
+
+
+
+Files
+
+Dependencies
+
+Add Dependency
+
+react
+17.0.2
+react-copy-to-clipboard
+5.1.0
+react-dom
+17.0.2
+react-drag-drop-container
+6.1.1
+react-scripts
+4.0.3
+universal-cookie
+4.0.4
+External resources
+
+111213141516171819202122232425262728293031323334353637383940414243
+any
+
+
+
+https://w4mdoi.csb.app/
+
+
+
+
+Filter
+
+All
+0752669f1
+0752669f1
+Ln 28, Col 53Spaces: 2UTF-8CRLFJavaScript React
