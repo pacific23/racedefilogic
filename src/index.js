@@ -305,7 +305,7 @@ class App extends React.Component {
       if (nbReconnect == 0) trophy = "🏆🏆🏆🏆";
       else trophy = "🏆🏆 🏆🏆";
       this.state.textToCopy =
-        "🐦🧟 https://racedefiLogic.bankiiiz.com 🧟🐦" +
+        "🐦🧟 https://racedefilogic.netlify.app/ 🧟🐦" +
         "\n\r" +
         trophy +
         "\n\r" +
@@ -314,7 +314,7 @@ class App extends React.Component {
         "s⏱" +
         "\n\r" +
         this.state.nbTry +
-        " tentative(s) : " +
+        " tentatives : " +
         essais +
         "\n\r" +
         this.state.historicalMoves.length +
