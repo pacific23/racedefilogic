@@ -34,7 +34,6 @@ var trophy = "";
 var essais = "";
 var lineMvt = "";
 var currentRace = 1;
-var essais = "";
 
 class App extends React.Component {
   state = {
@@ -164,7 +163,7 @@ class App extends React.Component {
         if (whichgame === 1) {
           background = backgroundHotel;
         }
-        this.setState({ gameState: 2 });
+        this.setState({ gameState: 2, nbMovesStep: 0, nbTryStep: 0 });
         if (currentRace === 1) {
           this.setState({ historicalMoves: [] });
           this.startChrono();
@@ -209,6 +208,30 @@ class App extends React.Component {
         timeFinal +
         "&score=" +
         scoreFinal
+    );
+    xhr.send();
+  }
+
+  setAllDatas() {
+    var xhr = new XMLHttpRequest();
+
+    xhr.addEventListener("load", () => {
+      var data = xhr.responseText;
+      this.getPredata();
+    });
+    xhr.open(
+      "GET",
+      "https://www.pcspace.com/logicbird/setDayChallenge.php?uuid=" +
+        userID +
+        "&nbMoves=" +
+        this.state.nbMoves +
+        "&nbTry=" +
+        this.state.nbTry +
+        "&time=" +
+        timeFinal +
+        "&score=" +
+        scoreFinal +
+        "&race=1"
     );
     xhr.send();
   }
@@ -297,6 +320,7 @@ class App extends React.Component {
         this.state.historicalMoves.length +
         " mouvements : " +
         lineMvt;
+      this.setAllDatas();
     } else {
       this.getData();
     }
