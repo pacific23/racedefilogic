@@ -237,46 +237,48 @@ class PlayHotel extends Component {
               </DropTarget>
             </div>
             <div align="center">
-              <table class="hotel">
-                <tr bgcolor="000000">
-                  <td colspan="4"></td>
-                </tr>
-                <tr bgcolor="a5ccaf" background={stage1}>
-                  <td>{this.renderTarget(0, 0)}</td>
-                  <td>{this.renderTarget(0, 1)}</td>
-                  <td>{this.renderTarget(0, 2)}</td>
-                  <td>{this.renderTarget(0, 3)}</td>
-                </tr>
-                <tr bgcolor="000000">
-                  <td colspan="4"></td>
-                </tr>
-                <tr bgcolor="9eb6ce" background={stage2}>
-                  <td>{this.renderTarget(1, 0)}</td>
-                  <td>{this.renderTarget(1, 1)}</td>
-                  <td>{this.renderTarget(1, 2)}</td>
-                  <td>{this.renderTarget(1, 3)}</td>
-                </tr>
-                <tr bgcolor="000000">
-                  <td colspan="4"></td>
-                </tr>
-                <tr bgcolor="bc9cc5" background={stage3}>
-                  <td>{this.renderTarget(2, 0)}</td>
-                  <td>{this.renderTarget(2, 1)}</td>
-                  <td>{this.renderTarget(2, 2)}</td>
-                  <td>{this.renderTarget(2, 3)}</td>
-                </tr>
-                <tr bgcolor="000000">
-                  <td colspan="4"></td>
-                </tr>
-                <tr bgcolor="ca9e9b" background={stage4}>
-                  <td>{this.renderTarget(3, 0)}</td>
-                  <td>{this.renderTarget(3, 1)}</td>
-                  <td>{this.renderTarget(3, 2)}</td>
-                  <td>{this.renderTarget(3, 3)}</td>
-                </tr>
-                <tr bgcolor="000000">
-                  <td colspan="4"></td>
-                </tr>
+              <table className="hotel">
+                <tbody>
+                  <tr bgcolor="000000">
+                    <td colSpan="4"></td>
+                  </tr>
+                  <tr bgcolor="a5ccaf" background={stage1}>
+                    <td>{this.renderTarget(0, 0)}</td>
+                    <td>{this.renderTarget(0, 1)}</td>
+                    <td>{this.renderTarget(0, 2)}</td>
+                    <td>{this.renderTarget(0, 3)}</td>
+                  </tr>
+                  <tr bgcolor="000000">
+                    <td colSpan="4"></td>
+                  </tr>
+                  <tr bgcolor="9eb6ce" background={stage2}>
+                    <td>{this.renderTarget(1, 0)}</td>
+                    <td>{this.renderTarget(1, 1)}</td>
+                    <td>{this.renderTarget(1, 2)}</td>
+                    <td>{this.renderTarget(1, 3)}</td>
+                  </tr>
+                  <tr bgcolor="000000">
+                    <td colSpan="4"></td>
+                  </tr>
+                  <tr bgcolor="bc9cc5" background={stage3}>
+                    <td>{this.renderTarget(2, 0)}</td>
+                    <td>{this.renderTarget(2, 1)}</td>
+                    <td>{this.renderTarget(2, 2)}</td>
+                    <td>{this.renderTarget(2, 3)}</td>
+                  </tr>
+                  <tr bgcolor="000000">
+                    <td colSpan="4"></td>
+                  </tr>
+                  <tr bgcolor="ca9e9b" background={stage4}>
+                    <td>{this.renderTarget(3, 0)}</td>
+                    <td>{this.renderTarget(3, 1)}</td>
+                    <td>{this.renderTarget(3, 2)}</td>
+                    <td>{this.renderTarget(3, 3)}</td>
+                  </tr>
+                  <tr bgcolor="000000">
+                    <td colSpan="4"></td>
+                  </tr>
+                </tbody>
               </table>
             </div>
           </div>
