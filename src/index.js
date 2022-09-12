@@ -299,7 +299,7 @@ class App extends React.Component {
         if (this.state.historicalMoves[j] == 1) lineMvt += "🔴";
         if (this.state.historicalMoves[j] == 2) {
           lineMvt += "🔵";
-          timeFinal += this.state.nbMoves;
+          timeFinal++;
         }
       }
       if (nbReconnect == 0) trophy = "🏆🏆🏆🏆";
